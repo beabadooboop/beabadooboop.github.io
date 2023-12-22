@@ -1,2 +1,50 @@
-blah
-asdas
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Grid</title>
+
+<style>
+body {
+  background-color: #36454F; /* Charcoal color */
+}
+
+.banner {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  background-image: url("banner.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px; /* Add space below the banner */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create 6 columns */
+  grid-gap: 30px; /* Adjust spacing between images */
+}
+
+.image-grid img {
+  width: 50px; /* Ensure images fill their grid cells */
+  height: 50px; /* Adjust image height as needed */
+  object-fit: cover; /* Preserve aspect ratio */
+  cursor: pointer; /* Indicate images are clickable */
+}
+</style>
+</head>
+<body>
+
+<div class="banner"></div>
+
+<div class="image-grid">
+  <a href="https://www.formula1.com/"><img src="f1.png" alt="Image 1 description"></a>
+  <a href="image2-link"><img src="f2.png" alt="Image 2 description"></a>
+  <a href="image2-link"><img src="f3.png" alt="Image 2 description"></a>
+  <a href="image2-link"><img src="fia.png" alt="Image 2 description"></a>
+  <a href="image2-link"><img src="gt.png" alt="Image 2 description"></a>
+  <a href="image2-link"><img src="gt.png" alt="Image 2 description"></a>
+  <a href="image2-link"><img src="gt.png" alt="Image 2 description"></a>
+</div>
+
+</body>
+</html>
