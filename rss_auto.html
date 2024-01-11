@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC RSS</title>
+    <style>
+        body {
+            background-color: #282c35; /* Dark background color */
+            color: #fff; /* Light text color */
+            font-family: 'Arial', sans-serif;
+            margin-left: 20px; /* Add a left margin */
+            margin-right: 20px; /* Add a right margin */
+        }
+
+        h1 {
+            color: #61dafb; /* Header text color */
+        }
+
+        ul {
+            list-style: none; /* Remove bullets */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px; /* Add margin below each item */
+        }
+
+        a {
+            color: #61dafb; /* Link color */
+        }
+
+        span.date {
+            color: grey; /* Grey text color for date and time */
+        }
+
+        span.description {
+            color: #bbb; /* Darker color for description */
+            margin-bottom: 10px; /* Add margin below each description */
+            display: block; /* Ensure each description is on a new line */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Autosport News</h1>
+    <ul id="rssFeed"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const rssFeedElement = document.getElementById("rssFeed");
+
+            const rssFeedUrl = "https://www.autosport.com/rss/all/news/"; // Adjust the URL for the first feed as needed
+            const titleKeywordRegex = /example/i; // Adjust the regex pattern for the title as needed
+            const linkKeywordRegex = /btcc|motogp|super-formula|supercars|wrc/i; // Adjust the regex pattern for the link as needed
+
+            try {
+                const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssFeedUrl)}`);
+                const data = await response.json();
+                const items = data.items || [];
+
+                // Filter and sort items
+                const filteredItems = items
+                    .filter(item => !titleKeywordRegex.test(item.title)) // Exclude items with titles containing the keyword
+                    .filter(item => !linkKeywordRegex.test(item.link)) // Exclude items with links containing the keyword
+                    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate)); // Sort by publication date (newest first)
+
+                // Display items
+                filteredItems.forEach(item => {
+                    const title = item.title;
+                    const link = item.link;
+                    const pubDate = new Date(item.pubDate);
+                    const today = new Date();
+                    let formattedDate;
+
+                    if (
+                        pubDate.getFullYear() === today.getFullYear() &&
+                        pubDate.getMonth() === today.getMonth() &&
+                        pubDate.getDate() === today.getDate()
+                    ) {
+                        formattedDate = 'Today ' + pubDate.toLocaleTimeString(undefined, {
+                            hour: 'numeric',
+                            minute: 'numeric'
+                        });
+                    } else {
+                        formattedDate = pubDate.toLocaleString(undefined, {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                            hour: 'numeric',
+                            minute: 'numeric'
+                        });
+                    }
+
+                    const description = item.description;
+                    const truncatedDescription = truncateWords(description, 35); // Limit description to 20 words
+                    const finalDescription = truncatedDescription + '...'; // Add "..." after the truncated description
+
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+                    a.textContent = title;
+                    a.href = link;
+
+                    const dateSpan = document.createElement("span");
+                    dateSpan.textContent = formattedDate;
+                    dateSpan.classList.add('date'); // Add a class for styling
+
+                    const descriptionSpan = document.createElement("span");
+                    descriptionSpan.textContent = finalDescription;
+                    descriptionSpan.classList.add('description'); // Add a class for styling
+
+                    li.appendChild(a);
+                    li.appendChild(document.createElement("br")); // Add a line break
+                    li.appendChild(dateSpan);
+                    li.appendChild(document.createElement("br")); // Add another line break
+                    li.appendChild(descriptionSpan);
+                    rssFeedElement.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Error fetching and displaying RSS feeds:", error);
+            }
+        });
+
+        function truncateWords(text, maxWords) {
+            const words = text.split(' ');
+            return words.slice(0, maxWords).join(' ');
+        }
+    </script>
+</body>
+</html>
