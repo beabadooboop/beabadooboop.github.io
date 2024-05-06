@@ -9,8 +9,8 @@ twitter.com##*[data-testid="sidebarColumn"]
 twitter.com##[aria-label="Timeline: Explore"]
 
 ! Tumblr Keywords
-tumblr.com##.FtjPK:has-text(/^(?!.*(\b.lando\b|\b.carlando\b|#martin|martijn|ln4|norrix|garrix|norstappen|nortrell|penelope|baby.p|jontent|jon.malvern))./i)
-tumblr.com##.FtjPK:has-text(/trump|anon.hate|hate.anon/i)
+tumblr.com##.FtjPK:has-text(/^(?!.*(\b.lando\b|\b.carlando\b|\b.martin\b|martijn|ln4|norrix|garrix|norstappen|nortrell|penelope|baby.p|jontent|jon.malvern)|adam.norris)./i)
+tumblr.com##.FtjPK:has-text(/discredit|trump|anon.hate|hate.anon/i)
 
 ! Tumblr Filtered
 tumblr.com##.FtjPK:has(div.W0ros)
