@@ -10,7 +10,7 @@ twitter.com##[aria-label="Timeline: Explore"]
 
 ! Tumblr Keywords
 tumblr.com##.FtjPK:has-text(/^(?!.*(\b.lando\b|\b.carlando\b|\b.martin\b|martijn|ln4|norrix|garrix|norstappen|nortrell|penelope|baby.p|jontent|jon.malvern)|adam.norris)./i)
-tumblr.com##.FtjPK:has-text(/discredit|trump|anon.hate|hate.anon/i)
+tumblr.com##.FtjPK:has-text(/trump/i)
 
 ! Tumblr Filtered
 tumblr.com##.FtjPK:has(div.W0ros)
@@ -39,5 +39,8 @@ www.tumblr.com##.iGLU3
 
 Reccomended Blogs in Tag Feed
 tumblr.com##.pqNoe
+
+Notif Button
+tumblr.com##.g8SYn.zxn0J.IYrO9 > .tDT48 > .a132D > .jF6A2
 
 
