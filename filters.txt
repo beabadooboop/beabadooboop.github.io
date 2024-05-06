@@ -1,0 +1,43 @@
+! Twitter Replies and For You Tab
+twitter.com##:is([aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]):not(:nth-of-type(1))
+twitter.com##div.r-16y2uox.r-cpa5s6.r-6b64d0.css-175oi2r:nth-of-type(1)
+
+! Twitter Rest
+twitter.com##article [role="group"] [class^="css-175oi2r"]
+twitter.com##article:has([data-testid="cardPoll"])
+twitter.com##*[data-testid="sidebarColumn"]
+twitter.com##[aria-label="Timeline: Explore"]
+
+! Tumblr Keywords
+tumblr.com##.FtjPK:has-text(/^(?!.*(\b.lando\b|\b.carlando\b|#martin|martijn|ln4|norrix|garrix|norstappen|nortrell|penelope|baby.p|jontent|jon.malvern))./i)
+tumblr.com##.FtjPK:has-text(/trump|anon.hate|hate.anon/i)
+
+! Tumblr Filtered
+tumblr.com##.FtjPK:has(div.W0ros)
+
+Tumblr Tage Page
+tumblr.com##div:has([class^="Wo4gS"] [aria-label="lando norris"])
+
+! Top Bar Bits
+tumblr.com##.HphhS
+tumblr.com##.aJgDC
+
+! Reccommended Tags in Dash Feed
+tumblr.com##.quD2R
+
+! Event Banner
+tumblr.com##.H4DuS
+
+! Sidebar Stuff
+tumblr.com##div.FZkjV:has([aria-label="Check out these blogs"])
+tumblr.com##div.FZkjV:has([class^="hF8Wr"])
+www.tumblr.com##.PwJi6
+www.tumblr.com##.W9GZw
+
+! Top Tag Post
+www.tumblr.com##.iGLU3
+
+Reccomended Blogs in Tag Feed
+tumblr.com##.pqNoe
+
+
