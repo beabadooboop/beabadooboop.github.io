@@ -8,14 +8,11 @@ tumblr.com##.FtjPK:has([class="oXROo"])
 tumblr.com##.FZkjV:has([class^="hF8Wr"])
 tumblr.com##div:has([class*="Wo4gS"] [aria-label="lando norris"])
 
-www.tumblr.com##.HphhS
-www.tumblr.com##.aJgDC
-www.tumblr.com##.quD2R
-www.tumblr.com##.pqNoe
-www.tumblr.com##.wttFd
-www.tumblr.com##._fk31
-
-tumblr.com##.FtjPK:has-text(/^(?=.*birb.speaks)(?!.*\b.?norrix\b).*/i)
-tumblr.com##.FtjPK:has-text(/^(?=.*f1-disaster-bi)(?!.*\b.?norrix\b).*/i)
-
-tumblr.com##.FtjPK:has(:scope .qYXF9:has-text(/^(?!.*(lando|norris|ln4|landito|carlando|norrix|norstappen|nortrell|martijn|garrix|jon|jontent|rossi|husbands|adam.norris|cisca.norris|\b.?ln\b))./i))
+tumblr.com##.HphhS
+tumblr.com##.aJgDC
+tumblr.com##.quD2R
+tumblr.com##.pqNoe
+tumblr.com##.wttFd
+tumblr.com##.iGLU3
+tumblr.com##.Qihwb
+tumblr.com##._fk31
