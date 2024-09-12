@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #444 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .table-of-contents {
+            background: #2a2a2a;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .table-of-contents h2 {
+            margin-top: 0;
+            color: #e0e0e0;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+        }
+        .table-of-contents li {
+            margin-bottom: 10px;
+        }
+        .table-of-contents a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        .recipe-card {
+            background: #2a2a2a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .recipe-card h2 {
+            margin-top: 0;
+            color: #e0e0e0;
+        }
+        .ingredients, .instructions {
+            margin: 20px 0;
+        }
+        .ingredients ul, .instructions ol {
+            margin: 0;
+            padding: 0;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .ingredients li {
+            color: #cfcfcf;
+        }
+        .instructions li {
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Recipe Collection</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="table-of-contents">
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#spaghetti-carbonara">Spaghetti Carbonara</a></li>
+                <li><a href="#chicken-curry">Chicken Curry</a></li>
+                <li><a href="#beef-stroganoff">Beef Stroganoff</a></li>
+                <li><a href="#vegetable-stir-fry">Vegetable Stir Fry</a></li>
+                <li><a href="#pancakes">Pancakes</a></li>
+                <li><a href="#chocolate-cake">Chocolate Cake</a></li>
+                <li><a href="#caesar-salad">Caesar Salad</a></li>
+                <li><a href="#tomato-soup">Tomato Soup</a></li>
+            </ul>
+        </div>
+
+        <!-- Recipe 1 -->
+        <div id="spaghetti-carbonara" class="recipe-card">
+            <h2>Spaghetti Carbonara</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>200g spaghetti</li>
+                <li>100g pancetta</li>
+                <li>50g Parmesan cheese</li>
+                <li>2 large eggs</li>
+                <li>2 cloves garlic</li>
+                <li>Salt and pepper to taste</li>
+                <li>Olive oil</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Bring a large pot of salted water to a boil and cook the spaghetti according to package instructions.</li>
+                <li>In a pan, heat a splash of olive oil and cook the garlic until golden. Add the pancetta and cook until crispy.</li>
+                <li>In a bowl, beat the eggs and mix in the grated Parmesan cheese.</li>
+                <li>Drain the spaghetti and quickly mix it with the pancetta and garlic. Remove from heat.</li>
+                <li>Add the egg and cheese mixture to the pasta, stirring rapidly to create a creamy sauce. Season with salt and pepper.</li>
+                <li>Serve immediately, garnished with additional Parmesan cheese if desired.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 2 -->
+        <div id="chicken-curry" class="recipe-card">
+            <h2>Chicken Curry</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>500g chicken breast</li>
+                <li>1 onion</li>
+                <li>2 cloves garlic</li>
+                <li>1 tablespoon curry powder</li>
+                <li>400ml coconut milk</li>
+                <li>2 tablespoons vegetable oil</li>
+                <li>Salt and pepper to taste</li>
+                <li>Fresh cilantro for garnish</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Heat the oil in a large pan over medium heat. Add the onion and garlic, and cook until softened.</li>
+                <li>Add the chicken and cook until browned on all sides.</li>
+                <li>Stir in the curry powder and cook for another minute.</li>
+                <li>Add the coconut milk and bring to a simmer. Cook until the chicken is fully cooked and the sauce has thickened.</li>
+                <li>Season with salt and pepper. Garnish with fresh cilantro before serving.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 3 -->
+        <div id="beef-stroganoff" class="recipe-card">
+            <h2>Beef Stroganoff</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>500g beef sirloin</li>
+                <li>1 onion</li>
+                <li>2 cloves garlic</li>
+                <li>200g mushrooms</li>
+                <li>1 tablespoon flour</li>
+                <li>300ml beef broth</li>
+                <li>200ml sour cream</li>
+                <li>2 tablespoons butter</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Cut the beef into strips and season with salt and pepper. In a pan, melt the butter and brown the beef on all sides. Remove and set aside.</li>
+                <li>In the same pan, cook the onions and garlic until softened. Add the mushrooms and cook until they release their moisture.</li>
+                <li>Stir in the flour and cook for another minute. Gradually add the beef broth, stirring constantly.</li>
+                <li>Return the beef to the pan and simmer until the beef is tender.</li>
+                <li>Stir in the sour cream and cook until heated through. Adjust seasoning if needed.</li>
+                <li>Serve over egg noodles or rice.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 4 -->
+        <div id="vegetable-stir-fry" class="recipe-card">
+            <h2>Vegetable Stir Fry</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>1 bell pepper</li>
+                <li>1 carrot</li>
+                <li>1 broccoli head</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>1 tablespoon hoisin sauce</li>
+                <li>2 cloves garlic</li>
+                <li>2 tablespoons vegetable oil</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Cut the vegetables into bite-sized pieces. Heat the oil in a large pan or wok over medium-high heat.</li>
+                <li>Add the garlic and cook until fragrant. Add the vegetables and stir-fry until tender-crisp.</li>
+                <li>Stir in the soy sauce and hoisin sauce, and cook for another minute.</li>
+                <li>Season with salt and pepper to taste. Serve with rice or noodles.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 5 -->
+        <div id="pancakes" class="recipe-card">
+            <h2>Pancakes</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>1 cup all-purpose flour</li>
+                <li>2 tablespoons sugar</li>
+                <li>1 tablespoon baking powder</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1 cup milk</li>
+                <li>1 egg</li>
+                <li>2 tablespoons melted butter</li>
+                <li>Maple syrup for serving</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>In a bowl, mix together the flour, sugar, baking powder, and salt.</li>
+                <li>In another bowl, whisk together the milk, egg, and melted butter.</li>
+                <li>Add the wet ingredients to the dry ingredients and stir until just combined.</li>
+                <li>Heat a griddle or non-stick pan over medium heat and lightly grease it.</li>
+                <li>Pour 1/4 cup of batter onto the griddle for each pancake. Cook until bubbles form on the surface, then flip and cook until golden brown on the other side.</li>
+                <li>Serve warm with maple syrup.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 6 -->
+        <div id="chocolate-cake" class="recipe-card">
+            <h2>Chocolate Cake</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>1 3/4 cups all-purpose flour</li>
+                <li>2 cups sugar</li>
+                <li>3/4 cup cocoa powder</li>
+                <li>1 1/2 teaspoons baking powder</li>
+                <li>1 1/2 teaspoons baking soda</li>
+                <li>1 teaspoon salt</li>
+                <li>2 eggs</li>
+                <li>1 cup milk</li>
+                <li>1/2 cup vegetable oil</li>
+                <li>2 teaspoons vanilla extract</li>
+                <li>1 cup boiling water</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Preheat the oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li>
+                <li>In a large bowl, mix the flour, sugar, cocoa powder, baking powder, baking soda, and salt.</li>
+                <li>Add the eggs, milk, oil, and vanilla extract. Beat on medium speed for 2 minutes.</li>
+                <li>Stir in the boiling water until the batter is well combined (batter will be thin).</li>
+                <li>Pour the batter into the prepared pans and bake for 30 to 35 minutes, or until a toothpick inserted in the center comes out clean.</li>
+                <li>Cool in the pans for 10 minutes, then remove from pans and cool completely on a wire rack. Frost as desired.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 7 -->
+        <div id="caesar-salad" class="recipe-card">
+            <h2>Caesar Salad</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>1 large head of romaine lettuce</li>
+                <li>1/2 cup Caesar dressing</li>
+                <li>1/4 cup grated Parmesan cheese</li>
+                <li>Croutons</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Wash and chop the romaine lettuce. Place it in a large salad bowl.</li>
+                <li>Add the Caesar dressing and toss until the lettuce is evenly coated.</li>
+                <li>Sprinkle the grated Parmesan cheese over the salad.</li>
+                <li>Add croutons and toss lightly.</li>
+                <li>Season with salt and pepper to taste, and serve immediately.</li>
+            </ol>
+        </div>
+
+        <!-- Recipe 8 -->
+        <div id="tomato-soup" class="recipe-card">
+            <h2>Tomato Soup</h2>
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>2 tablespoons olive oil</li>
+                <li>1 onion</li>
+                <li>2 cloves garlic</li>
+                <li>2 cans (14.5 oz each) diced tomatoes</li>
+                <li>2 cups vegetable broth</li>
+                <li>1 teaspoon dried basil</li>
+                <li>Salt and pepper to taste</li>
+                <li>1/2 cup heavy cream (optional)</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Heat the olive oil in a large pot over medium heat. Add the onion and garlic, and cook until softened.</li>
+                <li>Add the diced tomatoes, vegetable broth, and dried basil. Bring to a boil, then reduce heat and simmer for 20 minutes.</li>
+                <li>Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer the soup in batches to a blender and blend until smooth.</li>
+                <li>Stir in the heavy cream if using, and heat through. Season with salt and pepper to taste.</li>
+                <li>Serve hot, with a side of crusty bread if desired.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
