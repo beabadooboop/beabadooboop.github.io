@@ -20,6 +20,7 @@ tumblr.com##[aria-label="Post Activity"]
 ! Tumblr In-Timelne Banners
 tumblr.com##[data-cell-id*="carousel"]
 tumblr.com##[data-cell-id*="timelineObject"]
+tumblr.com##.B5krg
 
 ! Tumblr Sidebar
 www.tumblr.com##.e1knl
