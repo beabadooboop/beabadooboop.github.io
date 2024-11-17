@@ -34,8 +34,7 @@ tumblr.com##[data-testid="noteCountTotal"]
 tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/lando|landito|carlando|norrix|nortrell|norstappen/))):not(:has(.KSDLH:has-text(/lando|landito|carlando|norrix|nortrell|norstappen/)))
 tumblr.com##.FtjPK:has-text(/booing|bottle|disrespect|hate|hating|mad.at|nastiness|p1astri|rude|stans|threat|toxic|whiny/)
 tumblr.com##.FtjPK:has-text(birb speaks):not(:has-text(norrix))
+tumblr.com##.FtjPK:has-text(mgu-h):not(:has-text(norrix)):not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"]))
 
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text("norrix"))
-
-
 
