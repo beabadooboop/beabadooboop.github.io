@@ -35,4 +35,3 @@ tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/lando|landito|carlando|norrix|nortr
 tumblr.com##.FtjPK:has-text(/booing|bottle|disrespect|hate|hating|mad.at|nastiness|p1astri|rude|stans|threat|toxic|vile|whiny/)
 tumblr.com##.FtjPK:has-text(birb speaks):not(:has-text(norrix))
 tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text("norrix"))
-
