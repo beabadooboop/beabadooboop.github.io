@@ -1,0 +1,46 @@
+! Media
+autosport.com##.ms-comments-wrapper
+autosport.com##[data-msnt-label="Advertisement"]
+motorsport.com##.ms-comments-wrapper
+motorsport.com##[data-msnt-label="Advertisement"]
+
+! Reddit
+reddit.com##div:has([data-subreddit-name="formula1"])
+reddit.com##div:has([subreddit-name="formula1"])
+
+! Filtered Content
+tumblr.com##.FtjPK:has([class="W0ros"])
+
+! Polls
+tumblr.com##.FtjPK:has([data-attribution="poll-block"])
+
+! Tag Pages
+tumblr.com##div:has([class="GNy0H"])
+
+! Sidebar
+tumblr.com##.e1knl
+
+! Tumblr In-Timelne Banners
+tumblr.com##[data-cell-id*="carousel"]
+tumblr.com##[data-cell-id*="timelineObject"]
+tumblr.com##.B5krg
+
+! Post Activity
+tumblr.com##[aria-label="Post Activity"]
+
+! More Posts
+tumblr.com##.oFuUq
+
+! Close Notes
+tumblr.com##.gstmW
+
+! Blog Side Stuff
+tumblr.com##.vM8CJ
+
+! Procedural
+tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/lando|landito|carlando|norrix|nortrell|norstappen|quadrant/i))):not(:has(.KSDLH:has-text(/lando|landito|carlando|norrix|nortrell|norstappen|quadrant/i)))
+tumblr.com##.FtjPK:has-text(/birb.speaks|hate|hating|disrespect|threat|toxic|vile/i)
+tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text("/norrix/i"))
+
+
+
