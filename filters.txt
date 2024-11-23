@@ -15,7 +15,7 @@ tumblr.com##.FtjPK:has([class="W0ros"])
 tumblr.com##.FtjPK:has([data-attribution="poll-block"])
 
 ! Tag Pages
-tumblr.com##div:has([class="GNy0H"])
+tumblr.com##div:has([class="GNy0H"]):not(:has(.GNy0H:has-text(/norrix/i)))
 
 ! Sidebar
 tumblr.com##.e1knl
@@ -37,10 +37,11 @@ tumblr.com##.gstmW
 ! Blog Side Stuff
 tumblr.com##.vM8CJ
 
+! Notif Blue Icon
+www.tumblr.com##.zxn0J.IYrO9 > .tDT48 > .a132D > .jF6A2
+
 ! Procedural
 tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/lando|landito|carlando|norrix|nortrell|norstappen|quadrant/i))):not(:has(.KSDLH:has-text(/lando|landito|carlando|norrix|nortrell|norstappen|quadrant/i)))
 tumblr.com##.FtjPK:has-text(/hate|hating|disrespect|threat|toxic|vile|villain/i)
 tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
-tumblr.com##.FtjPK:has-text(birb speaks):not(:has-text(/norrix/i))
-
-
+tumblr.com##.FtjPK:has-text(birb speaks):not(:has-text(norrix))
