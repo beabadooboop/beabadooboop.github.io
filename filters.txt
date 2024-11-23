@@ -43,5 +43,6 @@ www.tumblr.com##.zxn0J.IYrO9 > .tDT48 > .a132D > .jF6A2
 ! Procedural
 tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/lando|landito|carlando|norrix|nortrell|norstappen|quadrant/i))):not(:has(.KSDLH:has-text(/lando|landito|carlando|norrix|nortrell|norstappen|quadrant/i)))
 tumblr.com##.FtjPK:has-text(/hate|hating|disrespect|threat|toxic|vile|villain/i)
-tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
-tumblr.com##.FtjPK:has-text(birb speaks):not(:has-text(norrix))
+tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys/i))
+tumblr.com##.FtjPK:has-text(/birb speaks/i):not(:has-text(/norrix|boys/i))
+
