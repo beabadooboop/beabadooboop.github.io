@@ -4,6 +4,9 @@ autosport.com##[data-msnt-label="Advertisement"]
 motorsport.com##.ms-comments-wrapper
 motorsport.com##[data-msnt-label="Advertisement"]
 
+! Bluesky
+bsky.app##[data-testid*="postThreadItem"]:not(:first-of-type):not([data-testid*="medland"])
+
 ! Reddit
 reddit.com##div:has([data-subreddit-name="formula1"])
 reddit.com##div:has([subreddit-name="formula1"])
@@ -45,6 +48,5 @@ tumblr.com##.FtjPK:not(:has-text(/\b(lando|landito|carlando|norrix|nortrell|nors
 tumblr.com##.FtjPK:has-text(/\b(disrespect|f1blr|f1twt|hate.?.?|hating|threat|toxic|vile|villain)\b/i)
 tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys/i))
 tumblr.com##.FtjPK:has-text(/birb speaks/i):not(:has-text(/norrix|boys/i))
-
-bsky.app##[data-testid*="postThreadItem"]:not(:first-of-type):not([data-testid*="medland"])
+tumblr.com##.FtjPK:has-text(/w1ld-wr1t3r/i):has-text(/\b(prompt)\b/i)
 
