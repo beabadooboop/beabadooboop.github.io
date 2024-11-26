@@ -46,3 +46,5 @@ tumblr.com##.FtjPK:has-text(/\b(disrespect|f1blr|f1twt|hate.?.?|hating|threat|to
 tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys/i))
 tumblr.com##.FtjPK:has-text(/birb speaks/i):not(:has-text(/norrix|boys/i))
 
+bsky.app##[data-testid*="postThreadItem"]:not(:first-of-type):not([data-testid*="medland"])
+
