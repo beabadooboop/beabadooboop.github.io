@@ -5,7 +5,7 @@ motorsport.com##.ms-comments-wrapper
 motorsport.com##[data-msnt-label="Advertisement"]
 
 ! Bluesky
-bsky.app##[data-testid*="postThreadItem"]:not(:first-of-type):not([data-testid*="medland"])
+bsky.app##[data-testid*="postThreadItem"]:not(:first-of-type)
 
 ! Reddit
 reddit.com##div:has([data-subreddit-name="formula1"])
@@ -45,8 +45,9 @@ www.tumblr.com##.zxn0J.IYrO9 > .tDT48 > .a132D > .jF6A2
 
 ! Procedural
 tumblr.com##.FtjPK:not(:has-text(/\b(lando|landito|carlando|norrix|nortrell|norstappen|jontent|quadrant)\b/i))
-tumblr.com##.FtjPK:has-text(/\b(disrespect|f1blr|f1twt|hate.?.?|hating|threat|toxic|vile|villain)\b/i)
+tumblr.com##.FtjPK:has-text(/\b(disrespect|direspectful|f1blr|f1twt|hate.?.?|hating|immature|threat|toxic|vile|villain)\b/i)
 tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys/i))
 tumblr.com##.FtjPK:has-text(/birb speaks/i):not(:has-text(/norrix|boys/i))
 tumblr.com##.FtjPK:has-text(/w1ld-wr1t3r/i):has-text(/\b(prompt)\b/i)
+tumblr.com##.FtjPK:has-text(/f1-disaster-bi/i):has-text(/\b(au|prompt)\b/i)
 
