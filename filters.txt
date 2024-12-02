@@ -58,7 +58,5 @@ tumblr.com##.FtjPK:has-text(/w1ld-wr1t3r/i):has-text(/\b(au|prompt)\b/i)
 tumblr.com##.FtjPK:has-text(/f1-disaster-bi/i):has-text(/\b(au|prompt)\b/i)
 
 ! Images and Video Posts Only
-tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys|landinrris/i))
-
-
+tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i)):not(:has-text(/boys/i)):not(:has-text(/landinrris/i))
 
