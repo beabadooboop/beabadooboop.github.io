@@ -14,9 +14,6 @@ reddit.com##div:has([subreddit-name="formula1"])
 ! Filtered Content
 tumblr.com##.FtjPK:has([class="W0ros"])
 
-! Polls
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
 ! Tag Pages Except Norrix
 tumblr.com##div:has([class="GNy0H"]):not(:has(.GNy0H:has-text(/norrix/i)))
 
@@ -43,8 +40,11 @@ tumblr.com##.vM8CJ
 ! Notif Blue Icon
 www.tumblr.com##.zxn0J.IYrO9 > .tDT48 > .a132D > .jF6A2
 
-! Include Keywords in Post & Tags
-tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|carlando|norrix|nortrell|norstappen|jontent|quadrant)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|carlando|norrix|nortrell|norstappen|jontent|quadrant)\b/i)))
+! Polls
+tumblr.com##.FtjPK:has([data-attribution="poll-block"])
+
+Include Keywords in Post & Tags
+tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
 
 ! Exclude Keywords in Post
 tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
@@ -52,10 +52,13 @@ tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(brocedes|disrespect|disrespectful|f1b
 ! Exclude Keywords in Tags
 tumblr.com##.FtjPK:has(.KSDLH:has-text(/\b(brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
 
-! Images and Video Posts Only
-! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys/i))
-
 ! Block Individuals
 tumblr.com##.FtjPK:has-text(/birb speaks/i):not(:has-text(/norrix|boys/i))
-tumblr.com##.FtjPK:has-text(/w1ld-wr1t3r/i):has-text(/\b(prompt)\b/i)
+tumblr.com##.FtjPK:has-text(/w1ld-wr1t3r/i):has-text(/\b(au|prompt)\b/i)
 tumblr.com##.FtjPK:has-text(/f1-disaster-bi/i):has-text(/\b(au|prompt)\b/i)
+
+! Images and Video Posts Only
+tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix|boys|landinrris/i))
+
+
+
