@@ -17,41 +17,31 @@ tumblr.com##.FtjPK:has([class="W0ros"])
 ! Tag Pages Except Norrix
 tumblr.com##div:has([class="GNy0H"]):not(:has(.GNy0H:has-text(/norrix/i)))
 
-! Sidebar
+! Sidebars
 tumblr.com##.e1knl
+tumblr.com##.vM8CJ
 
 ! Tumblr In-Timelne Banners
 tumblr.com##[data-cell-id*="carousel"]
 tumblr.com##[data-cell-id*="timelineObject"]
 tumblr.com##.B5krg
 
-! Post Activity
+! Post Activity Stuff
 tumblr.com##[aria-label="Post Activity"]
-
-! More Posts
 tumblr.com##.oFuUq
-
-! Close Notes
 tumblr.com##.gstmW
 
-! Blog Side Stuff
-tumblr.com##.vM8CJ
-
-! Notif Blue Icon
-www.tumblr.com##.zxn0J.IYrO9 > .tDT48 > .a132D > .jF6A2
-
-! Polls
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
-Include Keywords in Post & Tags
-tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
+! Keyword Inclusions
+tumblr.com##.FtjPK:not(:contains(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))
 
 ! Exclude Keywords in Post
-tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
+! tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
 
 ! Exclude Keywords in Tags
-tumblr.com##.FtjPK:has(.KSDLH:has-text(/\b(brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
+! tumblr.com##.FtjPK:has(.KSDLH:has-text(/\b(brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
 
-! Images and Video Posts Onlyy
+! Images and Video Posts Only
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
 
+Include Keywords in Post & Tags
+! tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
