@@ -47,16 +47,11 @@ Include Keywords in Post & Tags
 tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
 
 ! Exclude Keywords in Post
-tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
+tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
 
 ! Exclude Keywords in Tags
 tumblr.com##.FtjPK:has(.KSDLH:has-text(/\b(brocedes|disrespect|disrespectful|f1blr|f1twt|hate.?.?|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
 
-! Block Individuals
-tumblr.com##.FtjPK:has-text(/birb speaks/i):not(:has-text(/norrix|boys/i))
-tumblr.com##.FtjPK:has-text(/w1ld-wr1t3r/i):has-text(/\b(au|prompt)\b/i)
-tumblr.com##.FtjPK:has-text(/f1-disaster-bi/i):has-text(/\b(au|prompt)\b/i)
-
 ! Images and Video Posts Only
-tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i)):not(:has-text(/boys/i)):not(:has-text(/landinrris/i))
+! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
 
