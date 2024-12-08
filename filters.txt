@@ -35,4 +35,3 @@ tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectfu
 
 ! Images and Video Posts Only
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
-
