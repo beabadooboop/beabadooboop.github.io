@@ -26,7 +26,7 @@ tumblr.com##.B5krg
 
 ! Post Activity Stuff
 tumblr.com##[aria-label="Post Activity"]
-www.tumblr.com##.ePsyd
+www.tumblr.com##.vE6sH
 www.tumblr.com##.oFuUq
 
 ! Keyword Inclusions
@@ -37,3 +37,6 @@ tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectfu
 
 ! Images and Video Posts Only
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
+
+
+
