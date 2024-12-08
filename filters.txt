@@ -28,7 +28,48 @@ tumblr.com##.B5krg
 tumblr.com##[aria-label="Post Activity"]
 
 ! Keyword Inclusions
-tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
+! Media
+autosport.com##.ms-comments-wrapper
+autosport.com##[data-msnt-label="Advertisement"]
+
+! Bluesky Replies
+bsky.app##[data-testid*="postThreadItem"]:not(:first-of-type)
+
+! Reddit
+reddit.com##div:has([data-subreddit-name="formula1"])
+reddit.com##div:has([subreddit-name="formula1"])
+
+! Filtered Content
+tumblr.com##.FtjPK:has([class="W0ros"])
+
+! Tag Pages Except Norrix
+tumblr.com##div:has([class="GNy0H"]):not(:has(.GNy0H:has-text(/norrix/i)))
+
+! Sidebars
+tumblr.com##.e1knl
+tumblr.com##.vM8CJ
+
+! Tumblr In-Timelne Banners
+tumblr.com##[data-cell-id*="carousel"]
+tumblr.com##[data-cell-id*="timelineObject"]
+tumblr.com##.B5krg
+
+! Post Activity Stuff
+tumblr.com##[aria-label="Post Activity"]
+
+! Keyword Inclusions
+!tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
+
+tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/^.*\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b.*$/i))):not(:has(.KSDLH:has-text(/^.*\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b.*$/i)))
+
+
+tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i)):has(.KSDLH:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
+
+
+! Images and Video Posts Only
+! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
+
+
 
 tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i)):has(.KSDLH:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
 
