@@ -29,14 +29,10 @@ tumblr.com##[aria-label="Post Activity"]
 www.tumblr.com##.vE6sH
 www.tumblr.com##.oFuUq
 
-! Keyword Inclusions
-tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))):not(:has(.KSDLH:has-text(/\b(lando|landito|ln4|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i)))
-
-! Keyword Exclusions
-tumblr.com##.FtjPK:has(.k31gt:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i)):has(.KSDLH:has-text(/\b(anti|brocedes|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|vile|villain)\b/i))
+! Keywords
+tumblr.com##.FtjPK:not(:has-text(/\b(lando|landito|ln4|ln04|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))
+tumblr.com##.FtjPK:has(:has-text(/\b(anti|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|trump|vile|villain)/i))
 
 ! Images and Video Posts Only
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
-
-
 
