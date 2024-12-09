@@ -30,7 +30,7 @@ www.tumblr.com##.vE6sH
 www.tumblr.com##.oFuUq
 
 ! Keywords
-tumblr.com##.FtjPK:not(:has-text(/\b(lando|landito|ln4|ln04|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))
+tumblr.com##.FtjPK:not(:has-text(/\b(lando|landito|ln4|ln04|norris|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))
 tumblr.com##.FtjPK:has(:has-text(/\b(anti|disrespect|disrespectful|f1blr|f1twt|fanfic|hate|hating|immature|lecfosi|rpf|threat|toxic|trump|vile|villain)/i))
 
 ! Images and Video Posts Only
