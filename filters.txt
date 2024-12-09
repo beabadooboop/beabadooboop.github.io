@@ -13,7 +13,7 @@ reddit.com##div:has([subreddit-name="formula1"])
 tumblr.com##.FtjPK:has([class="W0ros"])
 
 ! Tag Pages Except Norrix
-tumblr.com##div:has([class="GNy0H"]):not(:has(.GNy0H:has-text(/norrix/i)))
+tumblr.com##div:has([class="GNy0H"]):not(:has(.GNy0H:has-text(/norrix|carlando/i)))
 
 ! Sidebars
 tumblr.com##.e1knl
@@ -31,7 +31,7 @@ www.tumblr.com##.oFuUq
 
 ! Keywords
 tumblr.com##.FtjPK:not(:has-text(/\b(lando|landito|ln4|ln04|carlando|norrix|nortrell|norstappen|jontent|quadrant|husbands)\b/i))
-tumblr.com##.FtjPK:has(:has-text(/\b(anti|disrespect|disrespectful|f1blr|f1twt|hate|hating|immature|lecfosi|threat|toxic|trump|vile|villain)/i))
+tumblr.com##.FtjPK:has(:has-text(/\b(anti|disrespect|disrespectful|f1blr|f1twt|fanfic|hate|hating|immature|lecfosi|rpf|threat|toxic|trump|vile|villain)/i))
 
 ! Images and Video Posts Only
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/norrix/i))
