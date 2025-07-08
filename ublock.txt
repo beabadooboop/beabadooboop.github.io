@@ -1,0 +1,52 @@
+! Autosport
+autosport.com##.ms-comments-wrapper
+autosport.com##[class*="ms-entity-comments"]
+autosport.com##[class*="relatedContent"]
+autosport.com##[data-msnt-label="Advertisement"]
+
+! The Race
+the-race.com##[class*="vsly"]
+the-race.com##[class*="therace_related"]
+the-race.com##[class*="actual-comments-link"]
+the-race.com##.previous_wrapper
+the-race.com##.bg-therace-base.wrapper
+the-race.com###therace_trend_read
+the-race.com###disqus_thread
+
+! Daily Mail Paywall
+www.dailymail.co.uk##.noskim
+www.dailymail.co.uk##[data-is-inline-paywall-mounted="true"]:remove-attr(style)
+www.dailymail.co.uk##.is-paywalled-article:remove-class(is-paywalled-article)
+
+! BazQux
+bazqux.com##[class*="post msgFooter"]
+bazqux.com##[class*="magazineText"]
+
+! Reddit
+reddit.com##div:has([data-subreddit-name="formula1"])
+reddit.com##div:has([subreddit-name="formula1"])
+
+! Nitter Header
+nitter.net##.profile-card
+
+! Tumblr Filtered Content
+tumblr.com##.FtjPK:has([class="W0ros"])
+
+! Tumblr Post Footer
+tumblr.com##.m5KTc:has([aria-label="Blaze"])
+tumblr.com##.vE6sH
+
+! Tumblr Timeline
+tumblr.com##[data-cell-id*="carousel"]
+tumblr.com##.jxu4l
+tumblr.com##.B5krg
+tumblr.com##.HphhS
+
+! Tumblr Sidebar
+tumblr.com##div.FZkjV:not(:has([href*="/settings"]))
+
+! Tumblr Procedural
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/lando|landito|ln4|ln04|lnfour|norris|landonorris|carlando|norrix|nortrell|norstappen|jontent|rossi/i))
+tumblr.com##.FtjPK:has-text(/\b(anti|antis|art|bottled|bottler|bottling|brat|carcar|charlos|childish|entitled|f1twt|fanfic|fanart|ficrec|haters|nazi|p1astri|racism|racist|reader|stans|toxic|undeserved)\b/i)
+tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/(norrix|nortrell)/i))
+
