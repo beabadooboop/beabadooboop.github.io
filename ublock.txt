@@ -46,7 +46,7 @@ tumblr.com##.HphhS
 tumblr.com##div.FZkjV:not(:has([href*="/settings"]))
 
 ! Tumblr Procedural
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/lando|landito|ln4|ln04|lnfour|norris|landonorris|carlando|norrix|nortrell|norstappen|jontent|rossi/i))
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/lando|landito|ln4|ln04|lnfour|norris|landonorris|carlando|norrix|nortrell|norstappen|jontent/i))
 tumblr.com##.FtjPK:has-text(/\b(anti|antis|art|bottled|bottler|bottling|brat|carcar|charlos|childish|entitled|f1twt|fanfic|fanart|ficrec|haters|nazi|p1astri|racism|racist|reader|stans|toxic|undeserved)\b/i)
 tumblr.com##.FtjPK:not(:has([aria-label="Image"])):not(:has([aria-label="Video Player"])):not(:has-text(/(norrix|nortrell)/i))
 
