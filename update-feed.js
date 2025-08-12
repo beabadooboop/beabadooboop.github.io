@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import { XMLParser, XMLBuilder } from 'fast-xml-parser';
 
-const sourceUrl = 'https://thesportsprgirl.tumblr.com/rss';
+const sourceUrl = 'https://bazqux.com/feed/d3666864eb9248916165';
 const outputFile = './feed.xml';
 
 // Helper to safely get text content from XML element
